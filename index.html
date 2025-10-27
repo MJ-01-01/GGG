@@ -62,7 +62,7 @@
   const popupImg = document.getElementById("popup-img");
   const close = document.getElementsByClassName("close")[0];
 
-  // When user clicks an image
+
   document.querySelectorAll(".gallery-box img").forEach(img => {
     img.addEventListener("click", function() {
       popup.style.display = "block";
@@ -70,12 +70,12 @@
     });
   });
 
-  // Close when clicking the '×'
+
   close.onclick = function() {
     popup.style.display = "none";
   }
 
-  // Close when clicking outside the image
+
   popup.onclick = function(e) {
     if (e.target === popup) popup.style.display = "none";
   }
