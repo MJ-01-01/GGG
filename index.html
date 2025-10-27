@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Gainz Greeper | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo"><a href="index.html">GGG</a></div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="infographics.html">Infographics</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Green Gainz Greeper — Squeeze. Charge. Repeat.</h1>
+        <p>
+          Turn your workouts into clean energy! This innovative hand gripper uses
+          piezoelectric technology to convert every rep into real power — charging
+          your battery while you train. Get stronger and greener with every squeeze.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="images/grippersnobg.png" alt="Green Gainz Greeper">
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <div id="title"><h1 >VIDEO COMMERCIAL</h1></div>
+  <section class="video-section">
+    <video controls>
+      <source src="videos/GGG.mkv" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Image Gallery -->
+   <div id="title"><h1 >IMAGE SHOWCASE</h1></div>
+  <section class="gallery">
+    <div class="gallery-box"><img src="images/sketch.png" alt="Sketch"></div>
+    <div class="gallery-box"><img src="images/front.png" alt="Front"></div>
+    <div class="gallery-box"><img src="images/back.png" alt="Back"></div>
+    <div class="gallery-box"><img src="images/bottom.png" alt="Bottom"></div>
+    <div class="gallery-box"><img src="images/colored.png" alt="Colored"></div>
+  </section>
+  <div id="popup" class="popup">
+  <span class="close">&times;</span>
+  <img class="popup-content" id="popup-img">
+</div>
+<script>
+  const popup = document.getElementById("popup");
+  const popupImg = document.getElementById("popup-img");
+  const close = document.getElementsByClassName("close")[0];
+
+  // When user clicks an image
+  document.querySelectorAll(".gallery-box img").forEach(img => {
+    img.addEventListener("click", function() {
+      popup.style.display = "block";
+      popupImg.src = this.src;
+    });
+  });
+
+  // Close when clicking the '×'
+  close.onclick = function() {
+    popup.style.display = "none";
+  }
+
+  // Close when clicking outside the image
+  popup.onclick = function(e) {
+    if (e.target === popup) popup.style.display = "none";
+  }
+</script>
+
+</body>
+</html>
