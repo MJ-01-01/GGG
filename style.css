@@ -1,4 +1,4 @@
-/* ===== Global Reset ===== */
+/*  Global */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===== Navbar ===== */
+/* nav bar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@ nav .nav-links a.active {
   color: #b4ffb0;
 }
 
-/* ===== Hero Section ===== */
+/* Hero Section */
 .hero {
   display: flex;
   justify-content: center;
@@ -95,14 +95,14 @@ nav .nav-links a.active {
 }
 
 #title h1 {
-  color: #ffffff;  /* green accent */
+  color: #ffffff; 
   font-size: 2rem;
   letter-spacing: 2px;
   background-color: #0a662e;
 
 }
 
-/* ===== Video Section ===== */
+/* Video Section*/
 .video-section {
   display: flex;
   justify-content: center;
@@ -117,7 +117,7 @@ nav .nav-links a.active {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* ===== Image Gallery ===== */
+/*Image Gallery*/
 
 .gallery {
   display: grid;
@@ -147,9 +147,9 @@ nav .nav-links a.active {
   box-shadow: 0 6px 30px rgba(76, 175, 80, 0.4);
 }
 
-/* ===== Image Popup / Lightbox ===== */
+/*  Image Popup / Lightbox  */
 .popup {
-  display: none; /* hidden by default */
+  display: none; 
   position: fixed;
   z-index: 1000;
   padding-top: 60px;
@@ -191,7 +191,7 @@ nav .nav-links a.active {
   color: #4caf50;
 }
 
-/* ===== Infographics Page ===== */
+/*  Infographics Page  */
 .infographic {
   display: flex;
   justify-content: center;
@@ -213,7 +213,7 @@ nav .nav-links a.active {
   transform: scale(1.02);
 }
 
-/* ===== Disclaimer Page ===== */
+/*  Disclaimer Page  */
 .disclaimer {
   display: flex;
   justify-content: center;
@@ -235,7 +235,7 @@ nav .nav-links a.active {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* ===== Responsive Adjustments ===== */
+/*  Responsive Adjustments  */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
