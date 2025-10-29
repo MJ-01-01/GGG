@@ -212,6 +212,51 @@ nav .nav-links a.active {
 .infographic img:hover {
   transform: scale(1.02);
 }
+/* Partnership Page */
+.partnership {
+  background-color: #212121;
+  color: #f5f5f5;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.partner-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  gap: 30px;
+  background: #2c2c2c;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+}
+
+.partner-section img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.partner-text {
+  flex: 1 1 400px;
+  color: #e0e0e0;
+}
+
+.partner-text h2 {
+  color: #4caf50;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.partner-text p {
+  line-height: 1.6;
+}
+
 
 /*  Disclaimer Page  */
 .disclaimer {
@@ -234,6 +279,7 @@ nav .nav-links a.active {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
+
 
 /*  Responsive Adjustments  */
 @media (max-width: 768px) {
