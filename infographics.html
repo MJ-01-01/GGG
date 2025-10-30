@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Infographics | Green Gainz Greeper</title>
+  <title>Green Gainz Greeper | Infographics </title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navbar -->
   <nav>
-    <div class="logo"><a href="index.html">GGG</a></div>
+    <div class="logo"><a href="index.html"><img src="images\logo.png" alt="GGG" width="100px" height="50px"></a></div>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="infographics.html">Infographics</a>
+      <a href="infographics.html" class="active">Infographics</a>
       <a href="partnership.html">Partnership</a>
       <a href="disclaimer.html">Disclaimer</a>
     </div>
@@ -23,6 +23,35 @@
   <section class="infographic">
     <img src="images/infographic.png" alt="Green Gainz Greeper Infographic">
   </section>
+
+  <div id="popup" class="popup">
+  <span class="close">&times;</span>
+  <img class="popup-content" id="popup-img">
+  </div>
+  <script>
+  const popup = document.getElementById("popup");
+  const popupImg = document.getElementById("popup-img");
+  const close = document.getElementsByClassName("close")[0];
+
+
+  document.querySelectorAll(".infographic img").forEach(img => {
+    img.addEventListener("click", function() {
+      popup.style.display = "block";
+      popupImg.src = this.src;
+    });
+  });
+
+
+  close.onclick = function() {
+    popup.style.display = "none";
+  }
+
+
+  popup.onclick = function(e) {
+    if (e.target === popup) popup.style.display = "none";
+  }
+</script>
+
 
 </body>
 </html>
