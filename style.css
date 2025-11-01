@@ -307,7 +307,6 @@ nav .nav-links a.active {
   }
 
   .hero-content {
-    flex-direction: column-reverse;
     text-align: center;
   }
 
@@ -351,3 +350,4 @@ nav .nav-links a.active {
     max-width: 100%;
   }
 }
+
