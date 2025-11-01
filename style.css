@@ -83,10 +83,24 @@ nav .nav-links a.active {
   justify-content: center;
 }
 
-.hero-image img {
+.hero-image img { 
+  width: 100%; 
+  max-width: 350px; 
+  height: auto; }
+
+/* 3D section */
+.ThreeD {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  padding: 20px 0;          
+}
+
+.ThreeD model-viewer {
   width: 100%;
-  max-width: 350px;
-  height: auto;
+  max-width: 600px;   
+  height: 500px;      
+  background-color: transparent;
 }
 
 #title {
@@ -210,7 +224,7 @@ nav .nav-links a.active {
 }
 
 .infographic img:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 /* Partnership Page */
 .partnership {
@@ -312,6 +326,11 @@ nav .nav-links a.active {
   .video-section video {
     width: 100%;
   }
+  
+  .ThreeD model-viewer {
+    height: 300px;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -325,5 +344,10 @@ nav .nav-links a.active {
 
   nav .nav-links a {
     margin-left: 15px;
+  }
+  
+  .ThreeD model-viewer {
+    height: 300px;
+    max-width: 100%;
   }
 }
