@@ -305,9 +305,8 @@ nav .nav-links a.active {
   nav .nav-links {
     margin-top: 10px;
   }
-
   .hero-content {
-    text-align: center;
+  text-align: center;
   }
 
   .hero-text h1 {
@@ -350,4 +349,3 @@ nav .nav-links a.active {
     max-width: 100%;
   }
 }
-
